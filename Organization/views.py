@@ -11,6 +11,7 @@ def OrganizationHome(request):
 def OrganizationStudentRequest(request):
 	return render(request,'./dist/org_student_request.html')
 
+
 def OrganizationBlockedStudent(request):
 	return render(request,'./dist/org_view_blocked_student.html')
 
