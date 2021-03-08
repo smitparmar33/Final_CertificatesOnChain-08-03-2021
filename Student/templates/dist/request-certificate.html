@@ -1,0 +1,80 @@
+{% extends 'StudentBase.html' %}
+{% load static %}
+{% block title %}
+<title> Request For Certificate </title>
+{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Edit</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+</head>
+
+<body>
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="profile-head">
+                        <h5>
+                            Dhiraj Beri
+                        </h5>
+                        <h6>
+                            GTU | <a href="/StudentViewProfile">View Profile</a>
+                        </h6>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <form action="#" method="post" class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Certificate Type</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <select name="cars" id="cars">
+                                        <option value="tenth">10 th</option>
+                                        <option value="twelweth">12 th</option>
+                                        <option value="University">University</option>
+
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Note</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea name="" id="" cols="30" rows="10" style="margin-top: 8px; margin-bottom: 8px; height: 155px;"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <h6>
+                                    <button type="submit" class="save-btn">SEND REQUEST</button>
+                                    <button type="submit" class="discard-btn">DISCARD</button>
+                                </h6>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+{% endblock %}

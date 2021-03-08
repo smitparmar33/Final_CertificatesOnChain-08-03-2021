@@ -1,0 +1,93 @@
+{% extends 'StudentBase.html' %}
+{% block title %}
+<title>Student - Dashboard</title>
+{% endblock %}
+{% block content %}
+{% csrf_token %}
+{% load static %}
+<div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="card bg-primary text-white mb-3">
+                        <div class="card-body">
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                Certificates
+                            </div>
+                            <br> 
+                            <h5>Total Certificates <br><br></h5> <h2>52</h2>
+                        </div>
+                        {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card bg-warning text-white mb-3">
+                        <div class="card-body"><div class="card-footer d-flex align-items-center justify-content-between">
+                                Certificates
+                            </div>
+                            <br> 
+                            <h5>Total Sent Request For Certificates</h5> <br> <h2>52</h2></div>
+                        {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card bg-success text-white mb-3">
+                        <div class="card-body">
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                Certificates
+                            </div>
+                            <br> 
+                            <h5>Total Sent Request For New Category Certificates</h5> <h2>52</h2></div>
+                        {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+                 <div class="col-xl-4 col-md-6">
+                    <div class="card bg-primary text-white mb-3">
+                        <div class="card-body">
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                               Third Party Organizations<br>
+                            </div>
+                            <br> 
+                            <h5>Total Approved Third Party Organizations</h5><br> <h2>52</h2>
+                        </div>
+                        {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card bg-warning text-white mb-3">
+                        <div class="card-body"><div class="card-footer d-flex align-items-center justify-content-between">
+                               Third Party Organizations
+                            </div>
+                            <br> 
+                            <h5>Total Requests By Third Party Organizations</h5> <h2>52</h2></div>
+                        {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+                 <div class="col-xl-4 col-md-6">
+                    <div class="card bg-success text-white mb-3">
+                        <div class="card-body">
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                Third Party Organizations
+                            </div>
+                            <br> 
+                            <h5>Total Blocked Third Party Organizations</h5><br><h2>52</h2></div>
+                        {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+{% endblock %}
